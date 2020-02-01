@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NY Times</title>
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </head>
+
+<body>
+
+    <nav class="navbar bg-dark mb-3">
+      <span class="h1">New York Times Search</span>
+    </nav>
+
+  <div class="container form-container">
+    <form>
+
+      <div class="form-group">
+        <label for="searchTerm">Search Term</label>
+        <input type="text" class="form-control" id="searchTerm">
+      </div>
+
+      <div class="form-group">
+        <label for="numberOfRecords">Number of Records</label>
+        <select class="form-control" id="numberOfRecords">
+          <option>1</option>
+          <option>5</option>
+          <option>10</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="startYear">Start Year</label>
+        <input type="text" class="form-control" id="startYear">
+      </div>
+
+      <div class="form-group">
+        <label for="endYear">End Year</label>
+        <input type="text" class="form-control" id="endYear">
+      </div>
+      <button id="searchButton" class="btn btn-primary">Search</button>
+      <button id="clearButton" class="btn btn-danger">Clear</button>
+    </form>
+  </div>
+  
+  <div class="container mt-5" id="resultsContainer" style="display:none">
+    <div class="card">
+      <div class="card-header">
+        Top Articles
+      </div>
+      <ul id="articleList" class="list-group list-group-flush">
+      </ul>
+    </div>
+  </div>
+  
+
+</body> 
+
+</html>
