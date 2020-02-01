@@ -47,7 +47,8 @@ $(document).ready(function() {
           // var br = $("<br>");
           // date.append(br);
 
-          var url = $("<a href>");
+          var url = $("<a>");
+          url.attr("href", results[i].web_url)
           url.text(results[i].web_url);
           newli.append(url);
 
